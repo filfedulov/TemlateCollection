@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74606D63-6A8D-42A1-B3BF-E21C9A24163C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Eleven_collection_</RootNamespace>
+    <AssemblyName>Eleven%28collection%29</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CallMethodsOfPersons\PersonMethodsCallinger.cs" />
+    <Compile Include="DefaultPersonInfo\IDefaultInformatable.cs" />
+    <Compile Include="DefaultPersonInfo\EmployeDefaultInformator.cs" />
+    <Compile Include="DefaultPersonInfo\PersonDefaultInformator.cs" />
+    <Compile Include="DefaultPersonInfo\TeacherDefaultInformator.cs" />
+    <Compile Include="ExceptionDirectory\ExceptionHandler.cs" />
+    <Compile Include="MenuClasses\IMenu.cs" />
+    <Compile Include="MenuClasses\MenuEmployer.cs" />
+    <Compile Include="MenuClasses\MenuStudenter.cs" />
+    <Compile Include="MenuClasses\MenuTeacher.cs" />
+    <Compile Include="MenuClasses\MenuRealizer.cs" />
+    <Compile Include="CallMethodsOfPersons\StudentMethodsCallinger.cs" />
+    <Compile Include="PersonObjects\Employe.cs" />
+    <Compile Include="CallMethodsOfPersons\EmployeMethodsCallinger.cs" />
+    <Compile Include="PersonObjects\Person.cs" />
+    <Compile Include="PersonObjects\Student.cs" />
+    <Compile Include="PersonObjects\Teacher.cs" />
+    <Compile Include="CallMethodsOfPersons\TeacherMethodsCallinger.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DefaultPersonInfo\StudentDefaultInformator.cs" />
+    <Compile Include="TestCollectionDirectory\CreateDirectory\KeysCreater.cs" />
+    <Compile Include="TestCollectionDirectory\CreateDirectory\ICreateCollections.cs" />
+    <Compile Include="TestCollectionDirectory\CreateDirectory\KeysValuesCreater.cs" />
+    <Compile Include="TestCollectionDirectory\CreateDirectory\StringsCreater.cs" />
+    <Compile Include="TestCollectionDirectory\CreateDirectory\StringsValuesCreater.cs" />
+    <Compile Include="TestCollectionDirectory\KeyCollection.cs" />
+    <Compile Include="TestCollectionDirectory\KeyValueCollection.cs" />
+    <Compile Include="TestCollectionDirectory\OperationsDirectory\IOperationsCollections.cs" />
+    <Compile Include="TestCollectionDirectory\OperationsDirectory\OperationsKeys.cs" />
+    <Compile Include="TestCollectionDirectory\OperationsDirectory\OperationsKeysValues.cs" />
+    <Compile Include="TestCollectionDirectory\OperationsDirectory\OperationsStrings.cs" />
+    <Compile Include="TestCollectionDirectory\OperationsDirectory\OperationsStringsValues.cs" />
+    <Compile Include="TestCollectionDirectory\StringCollection.cs" />
+    <Compile Include="TestCollectionDirectory\TestCollections.cs" />
+    <Compile Include="TestCollectionDirectory\StringValueCollection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
